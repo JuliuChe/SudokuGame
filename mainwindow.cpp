@@ -180,7 +180,7 @@ void MainWindow::initializeGrid(int size)
     for (int row = 0; row < myGridSize; ++row) {
         cases[row].resize(myGridSize);
         for (int col = 0; col < myGridSize; ++col) {
-            cases[row][col] = new Case(this, Position(row,col));
+            cases[row][col] = new Case(this, Position(row,col), myGridSize);
             cases[row][col]->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
             applyBorderStyles(cases[row][col], row, col, subGridSize);
             gridLayout->addWidget(cases[row][col], row, col);
