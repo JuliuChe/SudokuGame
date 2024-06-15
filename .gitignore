@@ -6,7 +6,6 @@
 *.a
 *.core
 *.moc
-*.o
 *.obj
 *.orig
 *.rej
@@ -69,5 +68,4 @@ Thumbs.db
 # Binaries
 # --------
 *.dll
-*.exe
 
